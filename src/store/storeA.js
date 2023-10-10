@@ -23,21 +23,14 @@ export const useStoreA = defineStore("storeA", {
     },
   },
 
-  // 持久化
+  // 持久化配置：若仅配置 true，则全部存储
+  // persist: true,
   persist: {
-    // 若仅配置这一项，则全部存储
-    enabled: true,
-
-    // 配置项
-    strategies: [
-      {
-        // 存储的 key， 默认是 defineStore 的第一个参数
-        key: "A",
-        // 存储位置，默认 sessionStorage
-        storage: localStorage,
-        // 指定内容
-        paths: ["count"],
-      },
-    ],
+    // 存储的 key， 默认是 defineStore 的第一个参数
+    key: "A",
+    // 存储位置，默认 localStorage
+    storage: localStorage,
+    // 指定内容
+    paths: ["count"],
   },
 });

@@ -27,16 +27,13 @@ export const useStoreB = defineStore(
   },
   {
     // persist: true,
-    // 配置项
-    // strategies: [
-    //   {
-    //     // 存储的 key， 默认是 defineStore 的第一个参数
-    //     key: "B",
-    //     // 存储位置，默认 sessionStorage
-    //     storage: localStorage,
-    //     // 指定内容
-    //     paths: ["count"],
-    //   },
-    // ],
+    persist: {
+      // 存储的 key， 默认是 defineStore 的第一个参数
+      key: "B",
+      // 存储位置，默认 localStorage
+      storage: localStorage,
+      // 指定内容
+      paths: ["count"],
+    },
   }
 );

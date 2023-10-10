@@ -6,16 +6,16 @@ import App from "./App.vue";
 import { createPinia } from "pinia";
 const pinia = createPinia();
 
+// 持久化插件
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
+pinia.use(piniaPluginPersistedstate);
+// 统一配置
 // import { createPersistedState } from "pinia-plugin-persistedstate";
 // pinia.use(
 //   createPersistedState({
 //     key: (id) => `__persisted__${id}`,
 //   })
 // );
-
-// 持久化插件
-import piniaPersist from "pinia-plugin-persist";
-pinia.use(piniaPersist);
 
 // 自定义插件
 const piniaPlugin = ({ store }) => {

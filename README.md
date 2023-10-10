@@ -46,13 +46,13 @@ src 下新建文件夹 store
 
 ## 如何持久化？
 
-使用 pinia-plugin-persist
+使用 pinia-plugin-persistedstate [https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/config.html]
 
 ### 安装
 
-`yarn add pinia-plugin-persist`
+`yarn add pinia-plugin-persistedstate`
 或
-`npm install pinia-plugin-persist`
+`npm install pinia-plugin-persistedstate`
 
 ### 使用
 

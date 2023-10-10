@@ -60,6 +60,6 @@ src 下新建文件夹 store
 
 ## 自定义插件
 
-[https://pinia.vuejs.org/zh/core-concepts/plugins.html]
+官网关于自定义插件 [https://pinia.vuejs.org/zh/core-concepts/plugins.html]
 
 见 main.js

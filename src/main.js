@@ -9,6 +9,7 @@ const pinia = createPinia();
 // 持久化插件
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 pinia.use(piniaPluginPersistedstate);
+
 // 统一配置
 // import { createPersistedState } from "pinia-plugin-persistedstate";
 // pinia.use(
@@ -18,6 +19,7 @@ pinia.use(piniaPluginPersistedstate);
 // );
 
 // 自定义插件
+// context = {pinia, app, store, options} 等
 const piniaPlugin = ({ store }) => {
   console.log("store", store);
   store.hello = "我是全局字符串";
